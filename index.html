@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SJBI K-2</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <style>
+        #containerx {
+            min-width: 650px;
+            max-width: 100%;
+            margin: 0 auto;
+            height: 750px;
+            background: #0270d7!important;
+
+        }
+        .css-border {
+            border: 4px solid #cddc39;
+            padding: 2px;
+            border-radius: 50%;
+            border-color: #0270d7;
+            width: 95px;
+            height: 95px;
+            }
+        .header-logo-image {
+            width: 60px;
+            height: 60px;
+        }
+        #testDiv { float:left; width: 360px; }
+        #testDiv .imgContainer { float:left; width:70px; height:70px; }
+        #testDiv .textContainer { float:left; width:240px; height:30px; overflow:hidden; margin-top: 15px}
+        .hero-paragraph { margin-bottom: 0px;}
+        .hero-title { margin-bottom: 0px;}
+
+        .small { font-size: 85%;}
+    </style>
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+
+                    <div id="testDiv">
+                        <div class="imgContainer"><img class="header-logo-image" src="dist/images/logo.png" /></div>
+                        <div class="textContainer">Universitas <strong> Gunadarma </strong></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+                            <p class="hero-paragraph">Rantai Pasok & Jaringan Bisnis</p>
+	                        <h1 class="hero-title mt-0">Industri Seafood</h1>
+	                        <p class="hero-paragraph">PT. Kelola Mina Laut, Gresik</p>
+	                        <!-- <div class="hero-cta"><a class="button button-primary" href="#">Pre order now</a><a class="button" href="#">Get in touch</a></div> -->
+						</div>
+						<div class="hero-figure anime-element">
+							<svg class="placeholder" width="528" height="175" viewBox="0 0 528 175">
+								<rect width="528" height="175" style="fill:transparent;" />
+							</svg>
+							<div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
+							<div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
+							<div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
+							<div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
+							<div class="hero-figure-box hero-figure-box-05"></div>
+							<div class="hero-figure-box hero-figure-box-06"></div>
+							<div class="hero-figure-box hero-figure-box-07"></div>
+							<div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
+							<div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
+							<div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"></div>
+						</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features section">
+                <div class="container">
+					<div class="features-inner section-inner has-bottom-divider">
+                        <div class="features-wrap">
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img  class="css-border" src="dist/images/198806112009121005.png" alt="Foto1">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Arif Rachman</h4>
+                                    <p class="text-sm mb-0">NIM <strong> 91121092</strong></p>
+                                </div>
+                            </div>
+							<div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img class="css-border" src="dist/images/197611261996021002.png" alt="Foto2">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Didik Setiawan</h4>
+                                    <p class="text-sm mb-0">NIM <strong>91121094</strong></p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img class="css-border" src="dist/images/198307192010121003.png" alt="Foto3">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Fawazi Bahtiar Ahmad</h4>
+                                    <p class="text-sm mb-0">NIM <strong>91121096</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pricing section">
+                <div class="container-sm">
+                    <div class="pricing-inner section-inner">
+                        <div class="pricing-header text-center">
+                            <div class="feature-icon">
+                                <img class="css-border" src="dist/images/kml-logo.png" alt="Foto1">
+                            </div>
+                            <h2 class="section-title mt-0">P.T. KML</h2>
+                            <p class="section-paragraph mb-0"> <strong> PT. Kelola Mina Laut </strong>merupakan perusahaan yang bergerak di bidang pengolahan komoditi perikanan dengan kuantitas ekspor mencapai 10.000 ton bahan baku per tahunnya.</p> <br>
+                            <p>PT. Kelola Mina Laut berlokasi di KIG <br> (Kawasan Industri Gresik) Raya Selatan Kav. C5, Gresik.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pricing section">
+                <div class="container-sm">
+                    <div class="pricing-inner section-inner">
+                        <div class="pricing-header text-center">
+                            <h2 class="section-title mt-0">Produk</h2>
+                            <p class="section-paragraph mb-0">
+                                <strong> PT. Kelola Mina Laut </strong> menghasilkan produk olahan: 
+                            </p>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="pricing-tables-wrap">
+                                        <div class="pricing-table">
+                                            <div class="pricing-table-inner">
+                                                <div class="pricing-table-main">
+                                                    <div class="pricing-table-header pb-24">
+                                                        <div class="pricing-table-price"><span class="pricing-table-price-currency h2"></span><span
+                                                                class="pricing-table-price-amount h1">Ikan Kakap</span></div>
+                                                    </div>
+                                                    <ul class="pricing-table-features list-reset text-xs">
+                                                        <li>
+                                                            <span>Fillet Skin On</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Fillet Skin Less</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>WGGS</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Fillet (Smoked)</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="pricing-tables-wrap">
+                                        <div class="pricing-table">
+                                            <div class="pricing-table-inner">
+                                                <div class="pricing-table-main">
+                                                    <div class="pricing-table-header pb-24">
+                                                        <div class="pricing-table-price"><span class="pricing-table-price-currency h2"></span><span
+                                                                class="pricing-table-price-amount h1">Udang</span></div>
+                                                    </div>
+                                                    <ul class="pricing-table-features list-reset text-xs">
+                                                        <li>
+                                                            <span>Cooked Peeled Tail On (CPTO)</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Peeled Deveined Tail On (PDTO)</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Peeled Undeveined (PUD)</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Cooked Peeled Undeveined (CPUD)</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Head On</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            
+                            </tr>
+                        </table>
+						
+                        <p>
+                            Rata-rata penjualan <strong> PT. Kelola Mina Laut </strong>untuk produk ikan kakap mencapai <strong> 105</strong> ton per bulan. Sedangkan untuk produk udang, penjualan rata-rata mencapai <strong> 400</strong> ton per bulan. 
+                            <br>
+                            Produk olahan udang yang paling banyak dipesan adalah CPTO, mencapai 70% dari total produk udang yang dihasilkan.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pricing section">
+                <div class="pricing-header text-center">
+                    <h2 class="section-title mt-0">Tujuan Ekspor</h2>
+                    <p class="section-paragraph mb-0">
+                        Negara tujuan ekspor meliputi: Amerika, Eropa, Asia (Jepang, Korea, Cina), <br> Timur Tengah, Australia, Selaindia Baru dan negara-negara Afrika.
+                        <br>
+                        <!-- Sebagian besar pembeli (importir) menjual komoditinya ke Supermarket atau Toko Ritel.     -->
+                    </p>
+                </div>
+            
+                <div class="pricing-inner section-inner">
+                    
+                </div>
+            </section>
+
+            <section class="pricing section">
+                <div class="pricing-header text-center">
+                    <h2 class="section-title mt-0">Jaringan Bisnis</h2>
+                    <p class="section-paragraph mb-0">
+                        90% produk ikan kakap dan udang yang diproduksi <strong> PT. Kelola Mina Laut </strong> dijual ke mancanegara. <br>
+                        PT. Kelola Mina Laut juga memiliki pasar di dalam negeri dengan tujuan penjualan <br> di kota-kota besar Pulau Sumatera hingga Pulau Papua.
+                    </p>
+                </div>
+
+                <div class="pricing-inner section-inner">
+                    <div id="containerx"></div>
+                </div>
+            </section>
+
+            <section class="cta section">
+                <div class="container small">
+                    <ul>
+                        <li>
+                            <strong> Nelayan:</strong> penyedia bahan baku (raw material) yang melakukan penangkapan di laut lepas untuk memperoleh komoditi ikan kakap</li>
+                        <li>
+                            <strong> Petambak Tradisional:</strong> Petambak yang mengolah lahan tambaknya secara sederhana mengikuti musim yang ada, sehingga produksi tidak bisa dilakukan secara terus-menerus.</li>
+                        <li>
+                            <strong> Petambak Intensif:</strong> Petambak yang bisa menghasilkan udang dengan ukuran besar dan sehat, serta dapat dipanen setiap saat.</li>
+                            <strong> Pengumpul:</strong> membeli tangkapan nelayan di Tempat Pelelangan Ikan (TPI). 
+                        </li>
+                        <li>
+                            <strong> Importir:</strong> Perusahaan luar negeri yang melakukan impor produk olahan ikan dan udang. 
+                        </li>
+                        <li>
+                            <strong> Distributor Dalam Negeri:</strong> Perusahaan luar negeri yang melakukan impor produk olahan ikan dan udang.
+                        </li>
+                        <li>
+                            <strong> Retailer:</strong> Perusahaan yang mengirimkan produk kepada pembeli yang sebelumya telah melakukan pemesanan.
+                        </li>
+                        <li>
+                            <strong> Factory Outlet:</strong> Outlet resmi perusahaan yang menjual produk olahan PT. Kelola Mina Laut dengan brand “mina mart”.
+                        </li>
+                        <li>
+                            <strong> Konsumen:</strong> Orang yang membeli hasil olahan ikan dan udang.
+                        </li>
+                        <li>
+                            <strong> Perusahaan pesaing:</strong> Perusahaan lain yang membeli dari pengumpul dan petambak intensif.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+			<section class="cta section">
+				<div class="container">
+					<div class="cta-inner section-inner">
+						<h3 class="section-title mt-0">Terima kasih</h3>
+						<!-- <div class="cta-cta">
+							<a class="button button-primary button-wide-mobile" href="#">Get in touch</a>
+						</div> -->
+					</div>
+				</div>
+			</section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="site-footer-inner">
+                    <div class="footer-copyright">&copy; 2022 - Kelompok 2</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="dist/js/main.min.js"></script>
+</body>
+</html>
+
+
+<script>
+    var 
+        c0 = "#2AA775";
+        c1 = "#ea5545",
+        c2 = "#f46a9b",
+        c3 = "#ef9b20",
+        c4 = "#edbf33",
+        c5 = "#ede15b",
+        c6 = "#bdcf32",
+        c7 = "#87bc45",
+        c8 = "#27aeef",
+        c9 = "#b33dc6",
+
+    Highcharts.chart("containerx", {
+        chart: {
+            type: "networkgraph",
+            marginTop: 10
+        },
+        legend: {
+            enabled: true
+        },
+        title: {
+            text: " "
+        },
+
+        // tooltip: {
+        //     formatter: function () {
+        //         var info = "";
+        //         switch (this.color) {
+        //             case c1:
+        //                 console.log(c1);
+        //                 info = " dengan <b>Lebih dari 10</b> jalur";
+        //                 break;
+        //             case c2:
+        //                 console.log(c2);
+        //                 info = " dengan <b>kurang dari 5</b> jalur";
+        //                 break;
+        //             case c4:
+        //                 console.log(c4);
+        //                 info = " dengan <b>kurang dari 5</b> jalur";
+        //                 break;
+        //         }
+        //         return "<b>" + this.key + "</b>: " + info;
+        //     }
+        // },
+
+        plotOptions: {
+            networkgraph: {
+                keys: ["from", "to"],
+                layoutAlgorithm: {
+                    enableSimulation: true,
+                    integration: "verlet",
+                    linkLength: 100
+                }
+            }
+        },
+
+        series: [
+            {
+                marker: {
+                    radius: 10
+                },
+                dataLabels: {
+                    enabled: true,
+                    linkFormat: "",
+                    allowOverlap: true,
+                    style: {
+                        textOutline: false
+                    }
+                },
+                data: [
+                    // ["Petambak Intensif 1", "PT KML"],
+                    // ["Petambak Intensif 2", "PT KML"],
+
+                    // ["Importir 2", "Retailer 2"],
+                    // ["Importir 3", "Retailer 3"],
+                    // ["Retailer 3", "Konsumen 4"],
+
+                    // ["Pengumpul 1", "Peta Tr 4"],
+
+
+
+                    ["Pengumpul 1", "PT KML"],
+                    ["Pengumpul 2", "PT KML"],
+                    ["Pengumpul 3", "PT KML"],
+
+                    ["Pengumpul 4", "Pesaing 1"],
+                    ["Pengumpul 4", "Pesaing 2"],
+                    ["Pengumpul 3", "Pesaing 2"],
+
+                    ["Pengumpul 1", "Nelayan 1"],
+                    ["Pengumpul 1", "Nelayan 2"],
+                    ["Pengumpul 1", "Nelayan 3"],
+                    ["Pengumpul 1", "Nelayan 4"],
+                    ["Pengumpul 1", "Nelayan 5"],
+
+                    ["Pengumpul 2", "Petambak Tradisional 1"],
+                    ["Pengumpul 2", "Petambak Tradisional 2"],
+                    ["Pengumpul 3", "Petambak Tradisional 1"],
+                    ["Pengumpul 4", "Petambak Tradisional 2"],
+
+                    ["Pengumpul 2", "Nelayan 1"],
+                    ["Pengumpul 2", "Nelayan 2"],
+                    ["Pengumpul 2", "Nelayan 3"],
+                    ["Pengumpul 2", "Nelayan 4"],
+                    ["Pengumpul 2", "Nelayan 5"],
+
+                    ["Pengumpul 3", "Nelayan 1"],
+                    ["Pengumpul 3", "Nelayan 2"],
+                    ["Pengumpul 3", "Nelayan 3"],
+                    ["Pengumpul 3", "Nelayan 4"],
+                    ["Pengumpul 3", "Nelayan 5"],
+
+                    ["Pengumpul 4", "Nelayan 3"],
+                    ["Pengumpul 4", "Nelayan 4"],
+                    ["Pengumpul 4", "Nelayan 5"],
+
+                    // ["Pengumpul 1", "Nelayan 1"],
+                    ["Pengumpul 2", "Nelayan 4"],
+
+
+                    // Pendukung
+                    ["Jasa Transportasi", "PT KML"],
+                    ["Perusahaan Es", "PT KML"],
+                    ["Perusahaan Kemasan", "PT KML"],
+                    ["Jasa Kontainer", "PT KML"],
+
+                    ["Petambak Intensif 1", "PT KML"],
+                    ["Petambak Intensif 2", "PT KML"],
+                    ["Petambak Intensif 3", "PT KML"],
+                    
+                    ["Petambak Intensif 1", "Pesaing 2"],
+
+                    // Distribusi
+                    ["Distributor DN", "PT KML"],
+                    ["Factory Outlet", "PT KML"],
+
+                    ["Importir 1", "PT KML"],
+                    ["Importir 2", "PT KML"],
+                    ["Importir 3", "PT KML"],
+
+                    ["Distributor DN", "Retailer DN 1"],
+                    ["Distributor DN", "Retailer DN 2"],
+
+                    ["Retailer DN 1", "Konsumen 4"],
+                    ["Retailer DN 1", "Konsumen 5"],
+                    ["Retailer DN 2", "Konsumen 4"],
+                    ["Retailer DN 2", "Konsumen 5"],
+
+                    ["Factory Outlet", "Konsumen 4"],
+                    ["Factory Outlet", "Konsumen 5"],
+
+
+                    ["Importir 1", "Retailer 1.1"],
+                    ["Importir 1", "Retailer 1.2"],
+
+                    ["Retailer 1.1", "Konsumen 1.1"],
+                    ["Retailer 1.2", "Konsumen 1.2"],
+                    ["Retailer 1.1", "Konsumen 1.2"],
+                    ["Retailer 1.2", "Konsumen 1.1"],
+
+
+                    ["Importir 2", "Retailer 2.1"],
+                    ["Importir 2", "Retailer 2.2"],
+
+                    ["Retailer 2.1", "Konsumen 2.1"],
+                    ["Retailer 2.2", "Konsumen 2.2"],
+                    ["Retailer 2.1", "Konsumen 2.2"],
+                    ["Retailer 2.2", "Konsumen 2.1"],
+
+
+                    ["Importir 3", "Retailer 3.1"],
+                    ["Importir 3", "Retailer 3.2"],
+
+                    ["Retailer 3.1", "Konsumen 3.1"],
+                    ["Retailer 3.2", "Konsumen 3.2"],
+                    ["Retailer 3.1", "Konsumen 3.2"],
+                    ["Retailer 3.2", "Konsumen 3.1"],
+
+
+                ],
+                nodes: [
+                    {
+                        id: "Jasa Transportasi",
+                        marker: {
+                            radius: 10
+                        },
+                        color: c5
+                    },
+                    {
+                        id: "Perusahaan Es",
+                        marker: {
+                            radius: 10
+                        },
+                        color: c5
+                    },
+                    {
+                        id: "Perusahaan Kemasan",
+                        marker: {
+                            radius: 10
+                        },
+                        color: c5
+                    },
+                    {
+                        id: "Jasa Kontainer",
+                        marker: {
+                            radius: 10
+                        },
+                        color: c5
+                    },
+                    {
+                        id: "PT KML",
+                        marker: {
+                            radius: 50
+                        },
+                        color: c8
+                    },
+                    {
+                        id: "Importir 1",
+                        marker: {
+                            radius: 20
+                        },
+                        color: c3
+                    },
+                    {
+                        id: "Importir 2",
+                        marker: {
+                            radius: 28
+                        },
+                        color: c3
+                    },
+                    {
+                        id: "Importir 3",
+                        marker: {
+                            radius: 25
+                        },
+                        color: c3
+                    },
+                    {
+                        id: "Pengumpul 1",
+                        marker: {
+                            radius: 20
+                        },
+                        color: c2
+                    },
+                    {
+                        id: "Pengumpul 2",
+                        marker: {
+                            radius: 19
+                        },
+                        color: c2
+                    },
+                    {
+                        id: "Pengumpul 3",
+                        marker: {
+                            radius: 20
+                        },
+                        color: c2
+                    },
+                    {
+                        id: "Pengumpul 4",
+                        marker: {
+                            radius: 30
+                        },
+                        color: c2
+                    },
+                    {
+                        id: "Nelayan 1",
+                        marker: {
+                            radius: 8
+                        },
+                        color: c7
+                    },
+                    {
+                        id: "Nelayan 2",
+                        marker: {
+                            radius: 10
+                        },
+                        color: c7
+                    },
+                    {
+                        id: "Nelayan 3",
+                        marker: {
+                            radius: 10
+                        },
+                        color: c7
+                    },
+                    {
+                        id: "Nelayan 4",
+                        marker: {
+                            radius: 20
+                        },
+                        color: c7
+                    },
+                    {
+                        id: "Nelayan 5",
+                        marker: {
+                            radius: 10
+                        },
+                        color: c7
+                    },
+                    {
+                        id: "Pesaing 1",
+                        marker: {
+                            radius: 15
+                        },
+                        color: c1
+                    },
+                    {
+                        id: "Pesaing 2",
+                        marker: {
+                            radius: 30
+                        },
+                        color: c1
+                    },
+                    {
+                        id: "Distributor DN",
+                        marker: {
+                            radius: 15
+                        },
+                        color: c4
+                    },
+                    {
+                        id: "Retailer 1.1",
+                        marker: {
+                            radius: 12
+                        },
+                        color: c9
+                    },
+                    {
+                        id: "Retailer 1.2",
+                        marker: {
+                            radius: 14
+                        },
+                        color: c9
+                    },
+                    {
+                        id: "Retailer 2.1",
+                        marker: {
+                            radius: 18
+                        },
+                        color: c9
+                    },
+                    {
+                        id: "Retailer 2.2",
+                        marker: {
+                            radius: 21
+                        },
+                        color: c9
+                    },
+                    {
+                        id: "Retailer 3.1",
+                        marker: {
+                            radius: 21
+                        },
+                        color: c9
+                    },
+                    {
+                        id: "Retailer 3.2",
+                        marker: {
+                            radius: 15
+                        },
+                        color: c9
+                    },
+                    {
+                        id: "Retailer DN 1",
+                        marker: {
+                            radius: 20
+                        },
+                        color: c9
+                    },
+                    {
+                        id: "Retailer DN 2",
+                        marker: {
+                            radius: 16
+                        },
+                        color: c9
+                    },
+                    {
+                        id: "Factory Outlet",
+                        marker: {
+                            radius: 15
+                        },
+                        color: c9
+                    },
+                    {
+                        id: "Petambak Intensif 1",
+                        marker: {
+                            radius: 15
+                        },
+                        color: c6
+                    },
+                    {
+                        id: "Petambak Intensif 2",
+                        marker: {
+                            radius: 10
+                        },
+                        color: c6
+                    },
+                    {
+                        id: "Petambak Intensif 3",
+                        marker: {
+                            radius: 12
+                        },
+                        color: c6
+                    },
+                    {
+                        id: "Petambak Tradisional 1",
+                        marker: {
+                            radius: 18
+                        },
+                        color: c6
+                    },
+                    {
+                        id: "Petambak Tradisional 2",
+                        marker: {
+                            radius: 10
+                        },
+                        color: c6
+                    },
+                ]
+            }
+        ]
+    });
+</script>
